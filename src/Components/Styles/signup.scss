@@ -1,0 +1,92 @@
+/* Auth.css */
+
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full height to center the form */
+    background-color: #222; /* Dark background */
+    color: #fff; /* Text color */
+    font-family: Arial, sans-serif;
+    margin-left: 25%;
+}
+
+.auth-container h2 {
+    font-size: 2.5rem; /* Font size for the title */
+    margin-bottom: 1.5rem; /* Space below the title */
+    color: #ffcc00; /* Yellow color for the title */
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 1rem; /* Space between inputs */
+    width: 100%;
+    max-width: 400px; /* Limit width of the form */
+    padding: 2rem; /* Padding inside the form */
+    background-color: #333; /* Dark background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.4); /* Subtle shadow */
+}
+
+.auth-form input {
+    padding: 0.75rem; /* Padding inside input */
+    font-size: 1rem; /* Font size */
+    color: #fff; /* Text color */
+    background-color: #444; /* Dark background for inputs */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s; /* Transition for border color */
+}
+
+.auth-form input:focus {
+    border-color: #ffcc00; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.auth-form button {
+    padding: 0.8rem; /* Padding for button */
+    font-size: 1rem; /* Font size */
+    color: #ffcc00; /* Text color */
+    background-color: transparent; /* Transparent background */
+    border: 1px solid #ffcc00; /* Yellow border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    letter-spacing: 3px; /* Spacing between letters */
+    font-weight: 700; /* Bold text */
+    box-shadow: 2px 2px 2px #ffcc00; /* Shadow for button */
+    transition: all 0.3s ease; /* Transition effects */
+}
+
+.auth-form button:hover {
+    background-color: #ffcc00; /* Background color on hover */
+    color: #222; /* Text color on hover */
+}
+
+.message {
+    margin-top: 1rem; /* Space above message */
+    font-size: 1rem; /* Font size for message */
+    color: #ffcc00; /* Yellow color for messages */
+}
+
+.toggle-link {
+    margin-top: 1rem; /* Space above toggle link */
+    color: #ffcc00; /* Color for the toggle link */
+    cursor: pointer; /* Pointer on hover */
+    text-decoration: underline; /* Underline text */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 500px) {
+    .auth-container h2 {
+        font-size: 1.8rem; /* Smaller title on mobile */
+    }
+
+    .auth-form input,
+    .auth-form button {
+        font-size: 0.9rem; /* Smaller inputs on mobile */
+    }
+}
+
+
